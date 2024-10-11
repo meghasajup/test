@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #246a93; 
+    padding: 10px 5%;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    padding: 5px 10px;
+    transition: background 0.2s ease;
+}
+
+.menu a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.sign-in {
+    display: flex;
+    align-items: center;
+    padding: 5px 5px;
+    color: #246a93;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.sign-in:hover {
+    background-color: #d5d5d5;
+}
+
+.arrow {
+    font-size: 10px;
+    padding: 2px;
+    font-weight: bold;
+    color: #246a93;
+}
+
+/* Hero section */
+.hero {
+    background-color: #f1f8fe;
+    text-align: center;
+    padding: 60px 5%;
+    color: #165071;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #165071;
+}
+
+.hero img {
+    width: 50px;
+}
+
+.hero p {
+    padding-top: 22px;
+    font-size: 26px;
+    margin-bottom: 30px;
+    color: #165071;
+}
+
+.hero .price {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #165071; 
+}
+
+.hero .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero .cta-buttons a {
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 55px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .download {
+    background-color: #ff6a00;
+    color: white;
+}
+
+.hero .download:hover {
+    background-color: #fc7514;
+}
+
+.buy-now-button {
+    display: inline-block;
+    padding: 15px 40px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    color: white;
+    background-color: #f0f0f0;
+}
+
+.buy-now-button {
+    background-color: #0096C7; /* Blue button for Buy Now */
+    position: relative;
+}
+
+.buy-now-button:hover {
+    background-color: #0077a3; /* Darker blue on hover */
+}
+
+.discount {
+    background-color: #FF6B6B; 
+    border-radius: 50px;
+    font-size: 16px;
+    margin-left: 10px;
+    vertical-align: middle;
+    color: white;
+}
+
+.buy-now-button .discount::after {
+    content: '%';
+    font-size: 14px;
+}
+
+.buy-now-button:hover .discount {
+    background-color: #e05c5c; 
+}
+
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 5%;
+    flex-wrap: wrap;
+    padding-bottom: 5px;
+}
+
+.feature{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.feature img {
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+
+.feature p {
+    font-size: 19px;
+    font-weight: 500;
+    padding-top: 5px;
+    color: #026184;
+}
+
+.next-line {
+    padding-top: 0.2px;
+}
+
+.extra-features {
+    display: flex; 
+    flex-wrap: wrap; 
+    background-color: white; 
+    padding: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9); 
+    justify-content: center;
+    gap: 25px;
+}
+
+.extra-features p{
+    font-size: 15px;
+}
+
+.extra-features img {
+    width: 25px;
+    height: 25px;
+}
+
+.extra-feature {
+    display: flex; 
+    align-items: center; 
+    margin-right: 10px; 
+}
+
+.extra-feature img {
+    margin-right: 10px; 
+}
+
+.img-section1 {
+    display: flex;
+}
+
+.img-section1 p {
+    position: relative;
+    padding-left: 600px;
+    padding-top: 70px;
+    color: #015370;
+    font-size: 30px;
+    text-align: center;
+}
+
+.img-section1  img {
+    position: absolute;
+    width: 100%;
+}
+
+.p-spany{
+    color: #0d99c8;
+}
+
+.contents-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.contents-section div {
+    flex: 1; 
+    margin: 0 20px; 
+}
+
+.contents-section div:first-child {
+    margin-left: 80px; 
+}
+
+.contents-section div:last-child {
+    margin-right: 80px; 
+}
+
+.contents-section p {
+    margin-bottom: 25px; 
+}
+
+
+.contents-section h2 {
+    margin-bottom: 25px; 
+    font-size: 30px;
+    color: #015370;
+}
+
+.contents-section h5 {
+    margin-bottom: 25px; 
+    color: #0096C7;
+}
+
+.contents-section2 h3 {
+    margin-bottom: 15px; /* Adds space below each heading */
+}
+
+.contents-section2 p {
+    margin-bottom: 30px; /* Adds space below each paragraph */
+}
+
+.contents-section2 p:last-child {
+    margin-bottom: 0; /* Removes extra space after the last paragraph */
+}
+
+
+
+
+.video-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.text-overlay h3 {
+    color: #0056b3;
+    font-size: 30px;
+    margin-bottom: 15px; /* Adds gap below the heading */
+}
+
+.text-overlay p {
+    font-size: 15px;
+    margin: 0 0 10px 0; /* Adds gap below each paragraph */
+    color: #333;
+}
+
+.text-overlay ol li{
+    padding-right: 20px;
+}
+
+.highlight-text {
+    color: #007bff;
+    font-weight: bold;
+    margin-bottom: 15px; /* Adds gap below the highlighted text */
+}
+
+.cta-button {
+    margin-top: 20px; /* Adds space between the text and the button */
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+
+  
+  
+  
+
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero .price {
+        font-size: 24px;
+    }
+
+    .hero .cta-buttons {
+        flex-direction: column;
+    }
+
+    .features, .additional-features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .feature, .additional-feature {
+        margin-bottom: 20px;
+        width: 100%; /* Full width on smaller screens */
+    }
+}
