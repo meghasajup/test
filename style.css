@@ -155,7 +155,6 @@ nav {
     background-color: #e05c5c; 
 }
 
-
 .features {
     display: flex;
     justify-content: space-around;
@@ -164,14 +163,14 @@ nav {
     padding-bottom: 5px;
 }
 
-.feature{
+.feature {
     display: flex;
     justify-content: space-between;
     gap: 8px;
 }
 
 .feature img {
-    width:30px;
+    width: 30px;
     height: 30px;
     border-radius: 50%;
     border: 2px solid #000;
@@ -198,7 +197,7 @@ nav {
     gap: 25px;
 }
 
-.extra-features p{
+.extra-features p {
     font-size: 15px;
 }
 
@@ -230,12 +229,12 @@ nav {
     text-align: center;
 }
 
-.img-section1  img {
+.img-section1 img {
     position: absolute;
     width: 100%;
 }
 
-.p-spany{
+.p-spany {
     color: #0d99c8;
 }
 
@@ -262,7 +261,6 @@ nav {
     margin-bottom: 25px; 
 }
 
-
 .contents-section h2 {
     margin-bottom: 25px; 
     font-size: 30px;
@@ -285,9 +283,6 @@ nav {
 .contents-section2 p:last-child {
     margin-bottom: 0; /* Removes extra space after the last paragraph */
 }
-
-
-
 
 .video-wrapper {
     position: relative;
@@ -331,7 +326,7 @@ nav {
     color: #333;
 }
 
-.text-overlay ol li{
+.text-overlay ol li {
     padding-right: 20px;
 }
 
@@ -356,13 +351,7 @@ nav {
     background-color: #0056b3;
 }
 
-
-  
-  
-  
-
-
-
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
@@ -400,5 +389,43 @@ nav {
     .feature, .additional-feature {
         margin-bottom: 20px;
         width: 100%; /* Full width on smaller screens */
+    }
+}
+
+/* Additional Media Queries for Mobile Screens */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .hero .price {
+        font-size: 20px;
+    }
+
+    .features p {
+        font-size: 16px;
+    }
+
+    .buy-now-button {
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+
+    .menu a {
+        font-size: 12px;
+    }
+
+    .contents-section {
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .contents-section div {
+        margin: 0 10px;
     }
 }
